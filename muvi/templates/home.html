@@ -1,0 +1,14 @@
+
+
+{% extends "input.html" %}
+{% block content %}
+<div class="container" align="center">
+<div class="jumbotron">
+  <a href="{% url 'input' %}">Uplode json file To store data in MongoDB</a><br>
+  <a href="{% url 'data' %}">Fetch top 6 viewed content</a><br>
+  <a href="http://127.0.0.1:8000/user/">API to store User data in database </a><br>
+  <a href="http://127.0.0.1:8000/content/">API to store content data in database  </a><br>
+  <a href="{% url 'sixdata' %}">Check Top 6 viewed content as API </a><br>
+</div>
+</div>
+{% endblock  %}

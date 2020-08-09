@@ -1,0 +1,43 @@
+Create 3  APIs where 2 APIs inserts datas in database and antoher one fetchs top 6 viewed content data of that store in JSON format.
+
+
+3 APIs
+--------
+
+1- Content Accusation API (POST)
+
+Create an API through which we can save any number of content data(available in JSON format) in mongoDb with proper validations.
+
+
+Example : 
+API parameters-
+	{
+   		"store_id":"123",
+		"received_json_data":"<* Dataset can be found in ContentData.json attached below>"
+	}
+
+2 - User View data accusation API (POST)
+
+Create an API through which we can save any number of user view data(available in JSON format) in mongoDb with proper validations.
+
+
+Example : 
+API parameters-
+	{
+   		"store_id":"123",
+		"received_json_data":"<* Dataset can be found in UserViewData.json attached below.>"
+	}
+
+
+
+3- Top Viewed Data API (GET)
+
+Create an API which will fetch top 6 viewed content data by passing the Store ID.
+
+
+
+
+Required Technology
+-------------------
+1 - Django / core python api
+2 - MongoDb

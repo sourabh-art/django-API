@@ -1,0 +1,44 @@
+
+
+{% extends "input.html" %}
+{% block content %}
+<div align="center">
+  <h1> Top 6 viewed content</h1>
+  <div class="jumbotron">
+
+    <table >
+
+      <thead>
+        <th>Name</th>
+        <th>Store ID</th>
+        <th>Number of views</th>
+      </thead>
+      {% for i in user|slice:"0:7" %}
+      <tbody>
+        <tr>
+
+          <td>{{i.user_name}}</td>
+          <td>{{i.store_id}}</td>
+          <td>{{i.no_of_views}}</td>
+        </tr>
+      </tbody>
+    {% endfor %}
+    </table>
+  </div>
+</div>
+<style media="screen">
+    td{
+      height:20px;
+      width:100px;
+      text-align: center;
+      border: 2px solid black;
+      font-size: 20px
+    }
+    th{
+        text-align: center;
+        border: 2px solid black;
+
+    }
+  </style>
+
+{% endblock  %}
